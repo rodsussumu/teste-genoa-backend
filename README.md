@@ -13,8 +13,8 @@
 
 id | cnpj            | razao_social  | data_inicio | data_final | ativo_total 
 -- | --------------- | ------------  | ----------- | ---------- | -----------
-1  | 12345678901122  | nomedaempresa | 11/09/2020  | 11/09/2021 | R$150000
-2  | 12345678901122  | nomedaempresa | 11/09/2020  | 11/09/2021 | R$150000
+1  | 12345678901122  | nomedaempresa | 11/09/2020  | 11/09/2021 | R$1500000
+2  | 12345678901122  | nomedaempresa | 11/09/2020  | 11/09/2021 | R$1500000
 
 * validações de campos em branco
 * CNPJ pode ser incluido como XX.XXX.XXX/0001-XX, então a validação deve retirar caracteres especiais
