@@ -22,10 +22,6 @@ id | cnpj            | razao_social  | data_inicio | data_final | ativo_total
 * data_final deve ser pelo menos 1 ano a mais que a data_inicio
 * se o ativo total for menor que R$1000000 e maior que R$153000000, deverá recursar a requisição
 
-## Diferenciais 
-
-* Deploy da api(Heroku)
-
 ## Duvidas ou entrega
 
 * Dúvidas e entregas devem ser enviadas para rodrigo.pedroni@genoaseguros.com.br ou rodrigo.tanaka@genoaseguros.com.br
