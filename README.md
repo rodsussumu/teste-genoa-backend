@@ -7,20 +7,25 @@
 
 ## Instruções
 
-- Você deve criar uma API REST e incluir um CRUD(GET, POST, PUT, DELETE)
+- Você deve criar uma API REST e incluir um CRUD(POST, GET, PUT, DELETE)
 - Você é livre para utilizar as libs que quiser
 - O case é baseado em uma contratação ficticia, a tabela deve ser baseada nessa:
 
-id | cnpj            | razao_social  | data_inicio | data_final | ativo_total 
--- | --------------- | ------------  | ----------- | ---------- | -----------
-1  | 12345678901122  | nomedaempresa | 11/09/2020  | 11/09/2021 | R$1500000
-2  | 12345678901122  | nomedaempresa | 11/09/2020  | 11/09/2021 | R$1500000
+id | cnpj            | razao_social  | data_inicio | data_final | ativo_total | abertura_empresa
+-- | --------------- | ------------  | ----------- | ---------- | ----------- | --------------
+1  | 12345678901122  | nomedaempresa | 11/09/2020  | 11/09/2021 | R$1500000   | 10/03/2002
 
+* CRUD - permitir inserir nova empresa, listar dados do banco, atualizar dados da empresa e deletar empresa
+* data_inicio/data_final - duração do seguro
+* abertura_empresa - data de fundação da empresa
+
+# Regras de negócio
 * validações de campos em branco
 * CNPJ pode ser incluido como XX.XXX.XXX/0001-XX, então a validação deve retirar caracteres especiais
 * data_inicio não pode ser maior que data_final
-* data_final deve ser pelo menos 1 ano a mais que a data_inicio
-* se o ativo total for menor que R$1000000 e maior que R$153000000, deverá recursar a requisição
+* data_final deve ser 1 ano após a data_inicio
+* se o ativo total for menor que R$1000000 e maior que R$153000000, deverá recusar a requisição
+* se a empresa estiver aberta a menos de 2 anos(abertura_empresa) deve recusar a requisição
 
 ## Duvidas ou entrega
 
